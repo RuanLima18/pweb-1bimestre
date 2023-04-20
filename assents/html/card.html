@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" 
+    href="../css/card.css"/>
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+        <h1>cadastra</h1>
+        <div id="msgErro"></div>
+        <div id="msgsucesso"></div>
+         <div class="label-float">
+            <input type="text" id="nome" placeholder="" required>
+            <label id="labelNome" for="nome">nome</label>
+         </div><br>
+         <div class="label-float">
+            <input type="password" id="senha" placeholder="" required/>
+            <label id="labelSenha" for="senha">senha</label>
+            <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
+         </div><br>
+         <div class="label-float">
+            <input type="password" id="confirmSenha" placeholder="" required/>
+            <label id="labelConfimSenha" for="confirmSenha">confirma senha</label>
+            <i id="verconfiemSenha" class="fa fa-eye" aria-hidden="true"></i>
+         </div><br>
+         <div class="justify-center">
+            <button onclick="cadastrar()">cadastrar</button>
+         </div>
+    </div>
+  </div>  
+  <script src="../js/card.js"></script>
+
+</body>
+</html>
